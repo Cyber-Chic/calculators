@@ -6,7 +6,8 @@
 <body>
 
   <input type="text" id="num1" placeholder="Enter length" style="font-size: 18pt; height: 40px; width:280px; "> 
-  <input type="text" id="num2" placeholder="Enter width" style="font-size: 18pt; height: 40px; width:280px; "> 
+  <input type="text" id="num2" placeholder="Enter width" style="font-size: 18pt; height: 40px; width:280px; ">
+  <input type="text" id="num3" placeholder="Enter height" style="font-size: 18pt; height: 40px; width:280px; "> 
   <button onclick="multiply()" style="font-size: 18pt; height: 40px; width:280px; ">Multiply</button>
   <p id="result"></p>
 
@@ -14,8 +15,9 @@
     function multiply() {
       let num1 = parseFloat(document.getElementById("num1").value);
       let num2 = parseFloat(document.getElementById("num2").value);
+      let num3 = parseFloat(document.getElementById("num2").value);
 
-      if (isNaN(num1) || isNaN(num2)) {
+      if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
         document.getElementById("result").textContent = "Please enter valid numbers.";
       } else {
         let product = num1 * num2;
